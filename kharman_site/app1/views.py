@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def hello(request):
+    print(request)
+    return render(request, "hello.html", {})
+
+def morning(request):
+    print(request)
+    return render(request, "morning.html", {})
